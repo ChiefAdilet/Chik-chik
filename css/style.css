@@ -45,7 +45,7 @@ img {
     margin: 0 auto;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 560px) {
     .container {
         padding: 0 24px;
     }
