@@ -6,23 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chik-chik - Барбершоп</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/main-link.css">
+    <link rel="stylesheet" href="css/hero.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;700&family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <img class="header__logo" src="img/logo.svg" alt="Логотип Барбершоп Chik-chik">
-            <nav class="header__navigation navigation">
-                <ul class="navigation__list">
-                    <li class="navigation__item">
-                        <a href="#price" class="navigation__link">Стоймость услуг</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#about" class="navigation__link">О нас</a>
-                    </li>
-                </ul>
-            </nav>
-            <a href="#reserve" class="header__link">Записаться</a>
+            <div class="header__container">
+                <img class="header__logo" src="img/logo.svg" alt="Логотип Барбершоп Chik-chik" width="70" height="40">
+                <nav class="header__navigation navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a href="#price" class="navigation__link">Стоймость услуг</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#about" class="navigation__link">О нас</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#reserve" class="header__link">Записаться</a>
+            </div>
         </div>
     </header>
     <main>
@@ -257,7 +263,7 @@
                             </fieldset>
                         </fieldset>
                     </div>
-                    <button class="reserve__btn main-link">Записаться</button>
+                    <button class="reserve__btn main-link" disabled>Записаться</button>
                 </form>
             </div>
         </section>

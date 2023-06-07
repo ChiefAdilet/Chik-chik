@@ -1,0 +1,9 @@
+.header {
+    padding: 62px 0;
+}
+
+.header__title {
+    font-weight: 400;
+    font-size: 54px;
+    text-transform: uppercase;
+}
