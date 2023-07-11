@@ -27,6 +27,7 @@ body {
     font-weight: 400;
     line-height: 1.2;
     min-width: 320px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 img {

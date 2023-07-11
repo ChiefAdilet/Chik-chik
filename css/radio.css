@@ -41,5 +41,6 @@
     }
     .radio__label-spec {
         padding-left: 40px;
+        background-size: 24px;
     }
 }
