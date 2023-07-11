@@ -77,7 +77,7 @@ const initSlider = () => {
 
     window.addEventListener('load', () => {
         sliderContainer.getElementsByClassName.display = ''
-        addPreload(slider)
+        removePreload(slider)
         
         startSlider()
     });
