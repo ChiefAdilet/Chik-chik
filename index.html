@@ -167,8 +167,9 @@
                 </ol>
                 <form class="reserve__form">
                     <div class="reserve__form-container">
-                        <fieldset class="reserve__fieldset">
+                        <fieldset class="reserve__fieldset reserve__fieldset-service">
                             <legend class="reserve__legend">Услуга</legend>
+
                             <label class="radio">
                                 <input class="radio__input" type="radio" name="service">
                                 <span class="radio__label">Стрижка ножницами</span>
@@ -204,8 +205,10 @@
                                 <span class="radio__label">Оформление бровей</span>
                             </label>
                         </fieldset>
-                        <fieldset class="reserve__fieldset">
+
+                        <fieldset class="reserve__fieldset" name="fieldspec">
                             <legend class="reserve__legend">Специалист</legend>
+
                             <label class="radio">
                                 <input class="radio__input" type="radio" name="spec">
                                 <span class="radio__label radio__label-spec" style="--bg-image: url(../img/spec1.png)">Игорь</span>
@@ -231,9 +234,11 @@
                                 <span class="radio__label radio__label-spec" style="--bg-image: url(../img/spec5.png)">Евгений</span>
                             </label>
                         </fieldset>
-                        <fieldset class="reserve__fieldset">
+
+                        <fieldset class="reserve__fieldset" name="fielddata">
                             <legend class="reserve__legend">Дата и время</legend>
-                            <fieldset class="reserve__fieldset reserve__fieldset-sub">
+
+                            <fieldset class="reserve__fieldset reserve__fieldset-sub" name="fieldmonth">
                                 <label class="radio">
                                     <input class="radio__input" type="radio" name="month">
                                     <span class="radio__label radio__label-spec">Январь</span>
@@ -250,7 +255,7 @@
                                 </label>
                             </fieldset>
 
-                            <fieldset class="reserve__fieldset reserve__fieldset-sub">
+                            <fieldset class="reserve__fieldset reserve__fieldset-sub" name="fieldday">
                                 <label class="radio">
                                     <input class="radio__input" type="radio" name="day">
                                     <span class="radio__label radio__label-spec">18 января</span>
@@ -272,7 +277,7 @@
                                 </label>
                             </fieldset>
 
-                            <fieldset class="reserve__fieldset reserve__fieldset-sub">
+                            <fieldset class="reserve__fieldset reserve__fieldset-sub" name="fieldtime">
                                 <label class="radio">
                                     <input class="radio__input" type="radio" name="hours">
                                     <span class="radio__label radio__label-spec">10:00-11:30</span>
@@ -310,7 +315,7 @@
                             </fieldset>
                         </fieldset>
                     </div>
-                    <button class="reserve__btn main-link" disabled>Записаться</button>
+                    <button class="reserve__btn main-link" disabled id="btn">Записаться</button>
                 </form>
             </div>
         </section>
