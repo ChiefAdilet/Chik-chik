@@ -195,7 +195,7 @@ const renderDay = (wrapper, data, month) => {
         <input class="radio__input" type="radio" name="day" value="${day}">
         <span class="radio__label">${new Intl.DateTimeFormat('ru-RU', {
             month: 'long', day: 'numeric'
-        }).format(new Date(`${month}/${day}`))}</span>
+        }).format(new Date(year, month, day))}</span>
         `;
         return label;
     });
