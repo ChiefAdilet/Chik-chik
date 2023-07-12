@@ -1,5 +1,7 @@
 const API_URL = 'https://daffy-bumpy-check.glitch.me/';
 
+const year = new Date().getFullYear()
+
 /*
 GET /api - получить список услуг
 GET /api?service={n} - получить список барберов
@@ -177,7 +179,7 @@ const renderMonth = (wrapper, data) => {
         <input class="radio__input" type="radio" name="month" value="${month}>
         <span class="radio__label">${new Intl.DateTimeFormat('ru-RU', {
             month: 'long'
-        }).format(new Date(item))}</span>
+        }).format(new Date(year, month))}</span>
         `;
         return label;
     });
